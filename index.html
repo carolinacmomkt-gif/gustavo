@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" type="image/avif" href="img/img_1009-1440.avif" imagesrcset="img/img_1009-640.avif 640w, img/img_1009-960.avif 960w, img/img_1009-1440.avif 1440w, img/img_1009-1920.avif 1920w, img/img_1009-2560.avif 2560w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/avif" href="img/img_1080-960.avif" imagesrcset="img/img_1080-640.avif 640w, img/img_1080-960.avif 960w, img/img_1080-1280.avif 1280w, img/img_1080-1600.avif 1600w" imagesizes="(min-width: 900px) 44vw, 82vw">
 
 <!--
   TAGS DE MÍDIA · descomente e troque os IDs quando as contas estiverem prontas.
@@ -104,10 +104,10 @@
 <!-- 01 · HERO -->
 <section class="hero" id="topo" aria-labelledby="hero-title">
   <div class="hero__stage">
-    <figure class="hero__photo" data-hero-photo>
+    <figure class="hero__photo fade-lb" data-hero-photo>
       <picture>
-        <source type="image/avif" srcset="img/img_1009-640.avif 640w, img/img_1009-960.avif 960w, img/img_1009-1440.avif 1440w, img/img_1009-1920.avif 1920w, img/img_1009-2560.avif 2560w" sizes="100vw">
-        <img src="img/img_1009-1440.webp" srcset="img/img_1009-640.webp 640w, img/img_1009-960.webp 960w, img/img_1009-1440.webp 1440w, img/img_1009-1920.webp 1920w, img/img_1009-2560.webp 2560w" sizes="100vw" width="2560" height="1707" fetchpriority="high" decoding="async" alt="Gustavo Gomes em estúdio, de camisa polo branca, falando ao celular e olhando para a câmera.">
+        <source type="image/avif" srcset="img/img_1080-640.avif 640w, img/img_1080-960.avif 960w, img/img_1080-1280.avif 1280w, img/img_1080-1600.avif 1600w" sizes="(min-width: 900px) 44vw, 82vw">
+        <img src="img/img_1080-960.webp" srcset="img/img_1080-640.webp 640w, img/img_1080-960.webp 960w, img/img_1080-1280.webp 1280w, img/img_1080-1600.webp 1600w" sizes="(min-width: 900px) 44vw, 82vw" width="1600" height="2000" fetchpriority="high" decoding="async" alt="Retrato em preto e branco de Gustavo Gomes de frente, com a mão tatuada apoiada no queixo, olhando para a câmera.">
       </picture>
     </figure>
 
@@ -206,24 +206,39 @@
   </div>
 
   <div class="depo">
-    <p class="mono depo__tag"><span>Depoimento · 0:12</span><span>Áudio original</span></p>
+    <p class="mono depo__tag"><span>Depoimentos em áudio</span><span>Áudios originais dos clientes</span></p>
     <blockquote class="depo__quote" data-split>“Quando a satisfação é a melhor referência.”</blockquote>
-    <p class="depo__ctx mono">Fechamento de uma venda de 9 mil vinda dos anúncios.</p>
-    <div class="player" data-player="venda" data-src="media/depoimento-venda-9k.mp3">
-      <button class="player__btn" type="button" data-play data-cursor="" aria-label="Ouvir depoimento sobre a venda de 9 mil">Ouvir</button>
-      <canvas class="player__wave" data-wave aria-hidden="true"></canvas>
-      <p class="player__time mono"><span data-cur>0:00</span> / <span data-dur>0:12</span></p>
-    </div>
 
-    <div class="depo2">
-      <p class="mono depo__tag"><span>Depoimento · Kings CT · 1:01</span></p>
-      <p class="depo2__line">Áudio do Kings CT, o maior centro de treinamento do Centro-Oeste.</p>
-      <div class="player player--small" data-player="kings" data-src="media/depoimento-kings-ct.mp3">
-        <button class="player__btn" type="button" data-play data-cursor="" aria-label="Ouvir depoimento do Kings CT">Ouvir</button>
-        <canvas class="player__wave" data-wave aria-hidden="true"></canvas>
-        <p class="player__time mono"><span data-cur>0:00</span> / <span data-dur>1:01</span></p>
-      </div>
-    </div>
+    <ol class="audios">
+      <li class="audio" data-fade>
+        <p class="audio__who mono"><span>01</span><span>Mel · proprietária da agência Loom</span><span>0:28</span></p>
+        <p class="audio__hook">“Todo o investimento que eu fiz, eu tive o dobro de retorno.”</p>
+        <div class="player" data-player="mel" data-src="media/depoimento-mel-loom.mp3">
+          <button class="player__btn" type="button" data-play data-cursor="" aria-label="Ouvir o depoimento da Mel, da agência Loom">Ouvir</button>
+          <canvas class="player__wave" data-wave aria-hidden="true"></canvas>
+          <p class="player__time mono"><span data-cur>0:00</span> / <span data-dur>0:28</span></p>
+        </div>
+      </li>
+      <li class="audio" data-fade>
+        <p class="audio__who mono"><span>02</span><span>Kings CT · o maior centro de treinamento do Centro-Oeste</span><span>1:01</span></p>
+        <p class="audio__hook">“Eu vi que economizamos muito dinheiro aqui no CT.”</p>
+        <div class="player" data-player="kings" data-src="media/depoimento-kings-ct.mp3">
+          <button class="player__btn" type="button" data-play data-cursor="" aria-label="Ouvir o depoimento do Kings CT">Ouvir</button>
+          <canvas class="player__wave" data-wave aria-hidden="true"></canvas>
+          <p class="player__time mono"><span data-cur>0:00</span> / <span data-dur>1:01</span></p>
+        </div>
+      </li>
+      <li class="audio" data-fade>
+        <p class="audio__who mono"><span>03</span><span>Depoimento</span><span>0:12</span></p>
+        <p class="audio__hook">“Da chamada de hoje teve um fechamento.”</p>
+        <p class="audio__ctx mono">Fechamento de uma venda de 9 mil vinda dos anúncios.</p>
+        <div class="player" data-player="venda" data-src="media/depoimento-venda-9k.mp3">
+          <button class="player__btn" type="button" data-play data-cursor="" aria-label="Ouvir depoimento sobre a venda de 9 mil">Ouvir</button>
+          <canvas class="player__wave" data-wave aria-hidden="true"></canvas>
+          <p class="player__time mono"><span data-cur>0:00</span> / <span data-dur>0:12</span></p>
+        </div>
+      </li>
+    </ol>
   </div>
 
   <div class="virada">
@@ -239,10 +254,10 @@
 <!-- 05 · MÉTODO -->
 <section class="metodo" id="metodo" aria-labelledby="metodo-title">
   <div class="metodo__media">
-    <figure class="metodo__photo" data-reveal-img>
+    <figure class="metodo__photo fade-rb" data-reveal-img>
       <picture>
-        <source type="image/avif" srcset="img/img_1005-640.avif 640w, img/img_1005-960.avif 960w, img/img_1005-1440.avif 1440w, img/img_1005-1920.avif 1920w, img/img_1005-2560.avif 2560w" sizes="(min-width: 900px) 66vw, 100vw">
-        <img src="img/img_1005-1440.webp" srcset="img/img_1005-640.webp 640w, img/img_1005-960.webp 960w, img/img_1005-1440.webp 1440w, img/img_1005-1920.webp 1920w, img/img_1005-2560.webp 2560w" sizes="(min-width: 900px) 66vw, 100vw" width="2560" height="1707" loading="lazy" decoding="async" alt="Gustavo Gomes de camisa polo branca, olhando para o celular nas mãos.">
+        <source type="image/avif" srcset="img/img_1005-640.avif 640w, img/img_1005-960.avif 960w, img/img_1005-1280.avif 1280w, img/img_1005-1600.avif 1600w" sizes="(min-width: 900px) 40vw, 86vw">
+        <img src="img/img_1005-960.webp" srcset="img/img_1005-640.webp 640w, img/img_1005-960.webp 960w, img/img_1005-1280.webp 1280w, img/img_1005-1600.webp 1600w" sizes="(min-width: 900px) 40vw, 86vw" width="1600" height="2000" loading="lazy" decoding="async" alt="Gustavo Gomes de camisa polo branca, olhando para o celular nas mãos.">
       </picture>
     </figure>
   </div>
@@ -281,16 +296,16 @@
   <h2 class="sobre__title" id="sobre-title" data-split>Prazer, Gustavo.</h2>
   <div class="sobre__grid">
     <div class="diptico">
-      <figure class="diptico__a" data-reveal-img>
+      <figure class="diptico__a fade-b" data-reveal-img>
         <picture>
-        <source type="image/avif" srcset="img/img_1077-640.avif 640w, img/img_1077-960.avif 960w, img/img_1077-1440.avif 1440w, img/img_1077-1920.avif 1920w, img/img_1077-2560.avif 2560w" sizes="(min-width: 900px) 50vw, 100vw">
-        <img src="img/img_1077-1440.webp" srcset="img/img_1077-640.webp 640w, img/img_1077-960.webp 960w, img/img_1077-1440.webp 1440w, img/img_1077-1920.webp 1920w, img/img_1077-2560.webp 2560w" sizes="(min-width: 900px) 50vw, 100vw" width="2560" height="1707" loading="lazy" decoding="async" alt="Retrato em preto e branco de Gustavo Gomes de blusa escura, mão no queixo, olhando para a câmera.">
+        <source type="image/avif" srcset="img/img_1077-640.avif 640w, img/img_1077-960.avif 960w, img/img_1077-1280.avif 1280w, img/img_1077-1600.avif 1600w" sizes="(min-width: 900px) 33vw, 50vw">
+        <img src="img/img_1077-960.webp" srcset="img/img_1077-640.webp 640w, img/img_1077-960.webp 960w, img/img_1077-1280.webp 1280w, img/img_1077-1600.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" width="1600" height="2000" loading="lazy" decoding="async" alt="Retrato em preto e branco de Gustavo Gomes de blusa escura, mão no queixo, olhando para a câmera.">
       </picture>
       </figure>
-      <figure class="diptico__b" data-reveal-img>
+      <figure class="diptico__b fade-b" data-reveal-img>
         <picture>
-        <source type="image/avif" srcset="img/img_0825-640.avif 640w, img/img_0825-960.avif 960w, img/img_0825-1440.avif 1440w, img/img_0825-1920.avif 1920w, img/img_0825-2560.avif 2560w" sizes="(min-width: 900px) 50vw, 100vw">
-        <img src="img/img_0825-1440.webp" srcset="img/img_0825-640.webp 640w, img/img_0825-960.webp 960w, img/img_0825-1440.webp 1440w, img/img_0825-1920.webp 1920w, img/img_0825-2560.webp 2560w" sizes="(min-width: 900px) 50vw, 100vw" width="2560" height="1707" loading="lazy" decoding="async" alt="Gustavo Gomes de camisa polo branca, com os braços tatuados apoiados sobre um bloco branco.">
+        <source type="image/avif" srcset="img/img_1078-640.avif 640w, img/img_1078-960.avif 960w, img/img_1078-1280.avif 1280w, img/img_1078-1600.avif 1600w" sizes="(min-width: 900px) 33vw, 50vw">
+        <img src="img/img_1078-960.webp" srcset="img/img_1078-640.webp 640w, img/img_1078-960.webp 960w, img/img_1078-1280.webp 1280w, img/img_1078-1600.webp 1600w" sizes="(min-width: 900px) 33vw, 50vw" width="1600" height="2000" loading="lazy" decoding="async" alt="Retrato em preto e branco de Gustavo Gomes de perfil, com a mão tatuada no queixo, olhando para cima.">
       </picture>
       </figure>
       <p class="diptico__cap mono"><span>Anápolis, GO</span><span>Retratos de estúdio</span></p>
@@ -333,10 +348,10 @@
 <!-- 08 · CONTATO -->
 <section class="contato" id="contato" aria-labelledby="contato-title">
   <p class="sec-tag mono"><span>08 / 08</span><span>Contato</span></p>
-  <figure class="contato__photo" data-reveal-img>
+  <figure class="contato__photo fade-lb" data-reveal-img>
     <picture>
-        <source type="image/avif" srcset="img/img_0828-640.avif 640w, img/img_0828-960.avif 960w, img/img_0828-1440.avif 1440w, img/img_0828-1920.avif 1920w, img/img_0828-2560.avif 2560w" sizes="(min-width: 900px) 60vw, 100vw">
-        <img src="img/img_0828-1440.webp" srcset="img/img_0828-640.webp 640w, img/img_0828-960.webp 960w, img/img_0828-1440.webp 1440w, img/img_0828-1920.webp 1920w, img/img_0828-2560.webp 2560w" sizes="(min-width: 900px) 60vw, 100vw" width="2560" height="1707" loading="lazy" decoding="async" alt="Gustavo Gomes de braços cruzados, com tatuagens à mostra, olhando para o lado.">
+        <source type="image/avif" srcset="img/img_1009-640.avif 640w, img/img_1009-960.avif 960w, img/img_1009-1280.avif 1280w, img/img_1009-1600.avif 1600w" sizes="(min-width: 900px) 42vw, 80vw">
+        <img src="img/img_1009-960.webp" srcset="img/img_1009-640.webp 640w, img/img_1009-960.webp 960w, img/img_1009-1280.webp 1280w, img/img_1009-1600.webp 1600w" sizes="(min-width: 900px) 42vw, 80vw" width="1600" height="2000" loading="lazy" decoding="async" alt="Gustavo Gomes de camisa polo branca, falando ao celular e olhando para a câmera.">
       </picture>
   </figure>
   <h2 class="contato__title" id="contato-title" data-split>Seu negócio pode ser o próximo print desse mural.</h2>
