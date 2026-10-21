@@ -151,7 +151,7 @@ a:hover .arrow { transform: translate(.12em, -.12em); }
 .hero__clock { position: absolute; top: calc(84px + env(safe-area-inset-top, 0px)); right: var(--gut-r); color: var(--papel-2); text-transform: uppercase; letter-spacing: .06em; }
 .hero__title {
   position: absolute; left: var(--gut-l); right: var(--gut-r); bottom: 2.6vh; z-index: 2;
-  font-weight: 300; font-size: 15vw; line-height: .8; letter-spacing: -0.055em;
+  font-weight: 300; font-size: min(15vw, 21.5svh); line-height: .8; letter-spacing: -0.055em;
 }
 .ln { display: block; overflow: hidden; padding-bottom: .09em; margin-bottom: -.09em; }
 .ln__in { display: block; white-space: nowrap; }
@@ -425,7 +425,7 @@ a:hover .arrow { transform: translate(.12em, -.12em); }
   .provas__bar { width: 120px; height: 1px; background: var(--filete); position: relative; overflow: hidden; }
   .provas__bar i { position: absolute; inset: 0; background: var(--papel); transform-origin: left; transform: scaleX(0); }
 
-  .prova__num { font-size: 15vw; }
+  .prova__num { font-size: min(15vw, 22svh); }
   .prova__doc { width: min(100%, calc((100svh - 330px) * 1.5)); }
 
   /* a: número no alto, documento embaixo à direita, legenda embaixo à esquerda */
