@@ -541,7 +541,7 @@ a:hover .arrow { transform: translate(.12em, -.12em); }
   .metodo__media, .metodo__body { grid-column: 1; }
   .metodo__media { padding-top: var(--sp); }
   .metodo__photo { position: relative; top: 0; max-height: none; width: 86%; margin-block: 0; }
-  .metodo__body { padding-block: 0 var(--sp); margin-top: -18vw; position: relative; }
+  .metodo__body { padding-block: 0 var(--sp); margin-top: 8px; position: relative; }
   .metodo__title { font-size: 12vw; }
 
   .sobre__title { font-size: 23vw; white-space: normal; line-height: .84; }
